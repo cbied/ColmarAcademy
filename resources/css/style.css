@@ -100,7 +100,7 @@ nav ul li a:hover {
   font-weight: bold;
   background-color: black;
   border-radius: 30%;
-  transition: color 750ms ease-in 300ms,
+  transition: color 300ms ease-in 300ms,
               font-weight 750ms ease-out 300ms,
               background-color 750ms ease-in 300ms,
               border-radius 300ms ease-in 300ms;
@@ -112,13 +112,12 @@ nav ul li a:hover {
 
 #banner {
   display: flex;
-  
   background-color: lightgray;
 }
 
 #bannerimg {
-    width: 100%;
-    height: 80%;
+  width: 80%;
+  height: auto;
     margin: 3rem 4rem 3rem 2.5rem;
     background-position: center;
     flex-grow: 1;
@@ -126,7 +125,7 @@ nav ul li a:hover {
 
 #bannerimg img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 #bannertext {
@@ -135,7 +134,7 @@ nav ul li a:hover {
   justify-content: center;
   height: 80%;
   margin: 10rem 4rem 6rem 0;
-  flex-shrink: 1;
+
 }
 
 #bannertext h1 {
@@ -170,20 +169,32 @@ nav ul li a:hover {
   color: white;
 }
 
+#bannertext button:hover {
+  background-color: black;
+  transition: background-color 750ms ease-in 500ms;
+}
+
+#bannertext button a:hover {
+  color: #52504C;
+  transition: color 750ms ease-in 500ms;
+}
+
 /* Main content */
 
 #main {
-  width: 100%;
+  display: flex;
+  background-color: #F0FFF1;
 }
 
 #leftmain {
   width: 60%;
   margin-left: 3rem;
+  border-right: 1px solid lightgray;
 }
 
 #leftmain img {
   width: 95%;
-  margin: 1.8rem 1.4rem 2.5rem 0;
+  margin: 3rem 1.4rem 2.5rem 0;
 }
 
 #leftmain h1 {
@@ -193,18 +204,58 @@ nav ul li a:hover {
 
 #leftmain h3 {
   font-size: 1.25rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
 }
 
 #leftmain p {
   font-size: 0.75rem;
-  margin: 3rem 0 1.5rem 0;
+  margin: 3rem 0 2.5rem 0;
 }
 
 #rightmain {
-  width: 40%
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 2rem;
 }
 
-#rightmain.rightcontainer {
+#rightmain .rightcontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border: 1px solid lightgray;
+  margin-bottom: 0.3rem;
+}
 
+#rightmain .rightcontainer:last-child {
+  background-color: lightgray;
+
+}
+
+#rightmain img {
+  height: 50%;
+  width: 35%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+#rightmain .rightcontainertext {
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+#rightmain .rightcontainertext h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#rightmain .rightcontainertext h5 {
+  margin-bottom: 2rem;
+}
+
+#rightmain .rightcontainertext p a{
+  text-decoration: underline;
+  color: blue;
 }

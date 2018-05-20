@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 #bannerimg {
-  width: 80%;
+
   height: auto;
     margin: 3rem 4rem 3rem 2.5rem;
     background-position: center;
@@ -133,7 +133,8 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   height: 80%;
-  margin: 10rem 4rem 6rem 0;
+  width: auto;
+  margin: 5rem 4rem 6rem 0;
 
 }
 
@@ -228,8 +229,9 @@ nav ul li a:hover {
   margin-bottom: 0.3rem;
 }
 
-#rightmain .rightcontainer:last-child {
+#rightmain .rightcontainer:hover {
   background-color: lightgray;
+  transition: background-color 450ms ease-in 200ms;
 
 }
 
@@ -258,4 +260,171 @@ nav ul li a:hover {
 #rightmain .rightcontainertext p a{
   text-decoration: underline;
   color: blue;
+}
+
+
+/* Start Learning */
+
+#startlearning {
+  background-color: lightgray;
+}
+
+#startlearning h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+#wrapbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.course {
+  margin: 2rem 1rem;
+  width: 21rem;
+  background-color: white;
+}
+
+.course:hover {
+  background-color: lightblue;
+  transform: scale(1.03);
+}
+
+.course h2 {
+  margin-top: 0.75rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.course h3 {
+  line-height: 2rem;
+}
+
+.course h2, .course h3 {
+  margin-left: 1em;
+  margin-bottom: 1rem;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+/* Thesis */
+
+#thesis {
+  display: flex;
+  background-color: #F0FFF1;
+}
+
+#thesisheader {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #F0FFF1;
+  padding-top: 3rem;
+}
+
+#thesisleft {
+  width: 60%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  border-right: 1px solid lightgray;
+}
+
+#thesisleft video {
+  width: 95%;
+  margin: 1rem 1.4rem 1.5rem 0;
+  border: 1px solid black;
+}
+
+#thesisleft h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#thesisleft h4 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  line-height: 1.8rem;
+}
+
+#rightthesis {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 3rem;
+}
+
+#rightthesis .rightcontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border: 1px solid lightgray;
+  margin-bottom: 0.3rem;
+}
+
+#rightthesis .rightcontainer:hover {
+  background-color: lightgray;
+  transition: background-color 450ms ease-in 200ms;
+
+}
+
+#rightthesis img {
+  height: 50%;
+  width: 35%;
+  margin: 1rem 0 1rem 1rem;
+}
+
+#rightthesis .rightcontainertext {
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+#rightthesis .rightcontainertext h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#rightthesis .rightcontainertext h5 {
+  margin-bottom: 2rem;
+}
+
+/* footer */
+
+footer {
+  height: 4rem;
+  background-color: #F0FFF1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: 1px solid gray;
+}
+
+#copyright {
+  margin-left: 1rem;
+  color: gray;
+}
+
+#terms {
+  display: flex;
+  margin-right: 1rem;
+}
+
+#terms p {
+  margin-left: 2rem;
+}
+
+#terms p a {
+  color: gray;
 }

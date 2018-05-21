@@ -1,44 +1,35 @@
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Heebo'), local('Heebo-Regular'), url(https://fonts.gstatic.com/s/heebo/v3/NGS6v5_NC0k9P9H2TbE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
-  src: local('Heebo Bold'), local('Heebo-Bold'), url(https://fonts.gstatic.com/s/heebo/v3/NGS3v5_NC0k9P9lNaKRMkK4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* latin */
-@font-face {
-  font-family: 'Libre Franklin';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizDREVItHgc8qDIbSTKq4XkRiUf2zc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* latin */
-@font-face {
-  font-family: 'Libre Franklin';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Libre Franklin Bold'), local('LibreFranklin-Bold'), url(https://fonts.gstatic.com/s/librefranklin/v2/jizAREVItHgc8qDIbSTKq4XkRi2k_iI0q1s.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 
 /* Universal */
 
 html, body {
   font-size: 18px;
-  font-family: "Heebo";
+  font-family: "Fira Sans";
 }
 
 
@@ -59,7 +50,7 @@ header img {
 }
 
 header h1 {
-  font-family: "Libre Franklin";
+  font-family: "Source Sans Pro";
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 0.2rem;
@@ -68,7 +59,7 @@ header h1 {
 }
 
 header h1 span {
-  font-family: "Heebo";
+  font-family: "Fira Sans";
   font-weight: normal;
   font-weight: 200;
   color: gray;
@@ -107,6 +98,56 @@ nav ul li a:hover {
 
 }
 
+header #icons {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  header  #logoandname {
+    display: none;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header #icons {
+    display: flex;
+  }
+
+  header #icons ul {
+    display: flex;
+  }
+
+  header #icons ul li {
+    margin-left: 3rem;
+  }
+
+  header #icons ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  header #icons ul li {
+    margin-left: 0.8rem;
+  }
+
+}
+
 
 /* Banner */
 
@@ -139,7 +180,7 @@ nav ul li a:hover {
 }
 
 #bannertext h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
   margin-right: 2rem;
@@ -180,6 +221,39 @@ nav ul li a:hover {
   transition: color 750ms ease-in 500ms;
 }
 
+@media only screen and (max-width: 1200px) {
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #bannerimg {
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner img {
+    background-size: contain;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bannertext {
+    height: auto;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+  }
+
+  #bannertext button {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+
+}
+
+
 /* Main content */
 
 #main {
@@ -199,8 +273,9 @@ nav ul li a:hover {
 }
 
 #leftmain h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
+  font-weight: bold;
 }
 
 #leftmain h3 {
@@ -262,6 +337,57 @@ nav ul li a:hover {
   color: blue;
 }
 
+@media only screen and (max-width: 1200px) {
+
+  #rightmain .rightcontainertext {
+    margin-top: 1rem;
+  }
+
+  #rightmain .rightcontainertext h3 {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #rightmain .rightcontainertext h5 {
+    margin-bottom: 1rem;
+  }
+
+  #rightmain .rightcontainertext p a{
+    text-decoration: underline;
+    color: blue;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #leftmain {
+    display: none;
+  }
+
+  #rightmain {
+    width: 100%;
+  }
+
+  #rightmain .rightcontainertext h3 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #rightmain .rightcontainertext h5 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #rightmain .rightcontainertext p a{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: blue;
+  }
+
+}
+
 
 /* Start Learning */
 
@@ -297,23 +423,31 @@ nav ul li a:hover {
 
 .course h2 {
   margin-top: 0.75rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
 .course h3 {
-  line-height: 2rem;
+  margin-bottom: 2.5rem;
+
 }
 
-.course h2, .course h3 {
-  margin-left: 1em;
-  margin-bottom: 1rem;
+.course h4 {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.course h2, .course h3, .course h4 {
+  margin-left: 2em;
+  margin-right: 1rem;
 }
 
 .course img {
   height: auto;
   width: 100%;
+  margin-bottom: 1rem;
+
 }
 
 /* Thesis */
@@ -346,6 +480,7 @@ nav ul li a:hover {
 
 #thesisleft h2 {
   font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
@@ -397,6 +532,22 @@ nav ul li a:hover {
 
 #rightthesis .rightcontainertext h5 {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  #thesisheader {
+    padding-top: 1.3rem;
+  }
+
+  #thesisleft {
+    width: 100%;
+  }
+
+  #rightthesis {
+    display: none;
+  }
+
 }
 
 /* footer */

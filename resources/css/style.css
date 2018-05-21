@@ -195,7 +195,6 @@ header #icons {
   margin-bottom: 2rem;
   margin-right: 3rem;
   color: #52504C;
-
 }
 
 #bannertext button {
@@ -250,6 +249,47 @@ header #icons {
   #bannertext button {
     padding: 1rem 3rem 1rem 3rem;
   }
+}
+
+@media only screen and (max-width: 850px) {
+
+  #banner {
+
+  }
+
+  #bannerimg {
+
+  }
+
+  #banner img {
+    background-size: contain;
+    height: 30rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bannertext {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+
+  #bannertext h1 {
+    font-size: 2rem;
+
+    margin: 0 0 2rem 0;
+    line-height: 2.5rem;
+  }
+
+  #bannertext h3 {
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0.5rem;
+  }
+
+  #bannertext button {
+    margin: 0;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+  }
+
 
 }
 
@@ -388,6 +428,54 @@ header #icons {
 
 }
 
+@media only screen and (max-width: 670px) {
+
+  #rightmain {
+    width: 100%;
+  }
+
+  #rightmain .rightcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+
+  }
+
+  #rightmain .rightcontainer img {
+    background-size: contain;
+    margin: 1rem 1rem 0 1rem;
+    align-self: center;
+    width: 90%;
+    height: 14rem;
+  }
+
+  #rightmain .rightcontainertext h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  #rightmain .rightcontainertext h5 {
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  #rightmain .rightcontainer p {
+      font-size: 1rem;
+      margin: 0 0 2rem 0;
+  }
+
+  #rightmain .rightcontainertext p a{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: blue;
+
+  }
+
+
+
+}
+
 
 /* Start Learning */
 
@@ -447,6 +535,13 @@ header #icons {
   height: auto;
   width: 100%;
   margin-bottom: 1rem;
+
+}
+
+@media only screen and (max-width 845px) {
+
+
+
 
 }
 
@@ -537,7 +632,12 @@ header #icons {
 @media only screen and (max-width: 1100px) {
 
   #thesisheader {
+    padding-top: 1.5rem;
+  }
+
+  #thesisheader h1 {
     padding-top: 1.3rem;
+    font-size: 2rem;
   }
 
   #thesisleft {
@@ -547,6 +647,30 @@ header #icons {
   #rightthesis {
     display: none;
   }
+
+}
+
+@media only screen and (max-width: 845px) {
+
+  #thesisheader h1 {
+    padding-top: 1rem;
+  }
+
+  #thesisleft {
+    margin: 2rem 0 0 0;
+    border: none;
+  }
+
+  #thesisleft video {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  #thesisleft h2, #thesisleft h4 {
+    display: none;
+  }
+
 
 }
 
@@ -578,4 +702,25 @@ footer {
 
 #terms p a {
   color: gray;
+}
+
+@media only screen and (max-width: 500px) {
+
+  footer {
+    justify-content: center;
+  }
+
+  #copyright {
+    margin: 0;
+  }
+
+  #copyright p {
+
+  }
+
+  #terms {
+    display: none;
+  }
+
+
 }

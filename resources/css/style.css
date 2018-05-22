@@ -538,9 +538,101 @@ header #icons {
 
 }
 
-@media only screen and (max-width 845px) {
+@media only screen and (max-width: 845px) {
 
 
+#startlearning h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+#wrapbox {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.course {
+  display: inline-block;
+  width: 20rem;
+  height: auto;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  align-self: center;
+}
+
+.course:hover {
+  background-color: lightblue;
+  transform: scale(1.03);
+}
+
+/* i tried making .course h2 position: absolute; but had to specify in each ID*/
+
+.course h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+#software h2 {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 4rem;
+}
+
+#computerart h2 {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 6rem;
+}
+
+#design h2 {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 8rem;
+}
+
+#data h2 {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 9rem;
+}
+
+#business h2 {
+  position: absolute;
+  bottom: 0.35rem;
+  left: 7.5rem;
+}
+
+#marketing h2 {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 7rem;
+}
+
+.course h3 {
+  display: none;
+}
+
+.course h4 {
+  display: none;
+}
+
+.course h2, .course h3, .course h4 {
+  margin: 0;
+  }
+
+.course img {
+  height: 5rem;
+  background-size: auto;
+  margin: 0;
+}
 
 
 }

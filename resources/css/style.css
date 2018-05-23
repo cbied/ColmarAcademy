@@ -91,10 +91,10 @@ nav ul li a:hover {
   font-weight: bold;
   background-color: black;
   border-radius: 30%;
-  transition: color 300ms ease-in 300ms,
-              font-weight 750ms ease-out 300ms,
-              background-color 750ms ease-in 300ms,
-              border-radius 300ms ease-in 300ms;
+  transition: color 300ms ease-in,
+              font-weight 750ms ease-out,
+              background-color 750ms ease-in,
+              border-radius 300ms ease-in;
 
 }
 
@@ -143,11 +143,21 @@ header #icons {
 @media only screen and (max-width: 500px) {
 
   header #icons ul li {
-    margin-left: 0.8rem;
+    margin-left: 0;
+  }
+
+  header img {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  header img {
+    margin: 0.5rem;
   }
 
 }
-
 
 /* Banner */
 
@@ -253,14 +263,6 @@ header #icons {
 
 @media only screen and (max-width: 850px) {
 
-  #banner {
-
-  }
-
-  #bannerimg {
-
-  }
-
   #banner img {
     background-size: contain;
     height: 30rem;
@@ -346,7 +348,7 @@ header #icons {
 
 #rightmain .rightcontainer:hover {
   background-color: lightgray;
-  transition: background-color 450ms ease-in 200ms;
+  transition: background-color 450ms ease-in;
 
 }
 
@@ -430,8 +432,12 @@ header #icons {
 
 @media only screen and (max-width: 670px) {
 
+  #main {
+    justify-content: center;
+  }
+
   #rightmain {
-    width: 100%;
+    width: 70%;
   }
 
   #rightmain .rightcontainer {
@@ -439,11 +445,10 @@ header #icons {
     flex-direction: column;
     width: 100%;
     border: none;
-
   }
 
   #rightmain .rightcontainer img {
-    background-size: contain;
+    background-size: auto;
     margin: 1rem 1rem 0 1rem;
     align-self: center;
     width: 90%;
@@ -471,8 +476,6 @@ header #icons {
     color: blue;
 
   }
-
-
 
 }
 
@@ -502,6 +505,7 @@ header #icons {
   margin: 2rem 1rem;
   width: 21rem;
   background-color: white;
+  transition: all 500ms ease;
 }
 
 .course:hover {
@@ -511,19 +515,23 @@ header #icons {
 
 .course h2 {
   margin-top: 0.75rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
 .course h3 {
-  margin-bottom: 2.5rem;
-
+  margin-bottom: 1.5rem;
+  font-weight: 550;
 }
 
 .course h4 {
     line-height: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+}
+
+#computerart h4 {
+  padding-bottom: 1rem;
 }
 
 .course h2, .course h3, .course h4 {
@@ -535,105 +543,120 @@ header #icons {
   height: auto;
   width: 100%;
   margin-bottom: 1rem;
-
 }
+
+
 
 @media only screen and (max-width: 845px) {
 
 
-#startlearning h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 4rem;
-  margin-bottom: 4rem;
-  font-weight: bold;
-}
-
-#wrapbox {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-.course {
-  display: inline-block;
-  width: 20rem;
-  height: auto;
-  margin: 0 0 2rem 0;
-  padding: 0;
-  align-self: center;
-}
-
-.course:hover {
-  background-color: lightblue;
-  transform: scale(1.03);
-}
-
-/* i tried making .course h2 position: absolute; but had to specify in each ID*/
-
-.course h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
-
-#software h2 {
-  position: absolute;
-  bottom: 0.4rem;
-  left: 4rem;
-}
-
-#computerart h2 {
-  position: absolute;
-  bottom: 0.4rem;
-  left: 6rem;
-}
-
-#design h2 {
-  position: absolute;
-  bottom: 0.4rem;
-  left: 8rem;
-}
-
-#data h2 {
-  position: absolute;
-  bottom: 0.4rem;
-  left: 9rem;
-}
-
-#business h2 {
-  position: absolute;
-  bottom: 0.35rem;
-  left: 7.5rem;
-}
-
-#marketing h2 {
-  position: absolute;
-  bottom: 0.3rem;
-  left: 7rem;
-}
-
-.course h3 {
-  display: none;
-}
-
-.course h4 {
-  display: none;
-}
-
-.course h2, .course h3, .course h4 {
-  margin: 0;
+  #startlearning h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
   }
 
-.course img {
-  height: 5rem;
-  background-size: auto;
-  margin: 0;
+  #wrapbox a {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .course a {
+    display: inline-block;
+    width: 20rem;
+    height: auto;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    align-self: center;
+    transition: all 500ms ease;
+  }
+
+  .course:hover {
+    background-color: lightgray;
+    transform: scale(1.2);
+  }
+
+  .course {
+    background-color: lightgray;
+    margin-bottom: 1rem;
+    transition: all 500ms ease;
+  }
+
+  .course img{
+    border-radius: 50%;
+  }
+
+  .course h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0;
+  }
+
+  #software h2 {
+    position: relative;
+    bottom: 3.2rem;
+  }
+
+  #computerart h2 {
+    position: relative;
+    bottom: 2.5em;
+  }
+
+  #design h2 {
+    position: relative;
+    bottom: 3.2rem;
+  }
+
+  #data h2 {
+    position: relative;
+    bottom: 3.3rem;
+  }
+
+  #business h2 {
+    position: relative;
+    bottom: 3.2rem;
+  }
+
+  #marketing h2 {
+    position: relative;
+    bottom: 3rem;
+  }
+
+  .course h3 {
+    display: none;
+  }
+
+  .course h4 {
+    display: none;
+  }
+
+  .course h2, .course h3, .course h4 {
+    margin: 0;
+  }
+
+  .course img {
+    height: 5rem;
+    background-size: auto;
+    margin: 0;
+  }
 }
 
+@media only screen and (max-width: 390px) {
+
+  #startlearning h1 {
+    font-size: 2rem;
+  }
+
+  .course {
+    width: 15rem;
+  }
 
 }
 
@@ -707,18 +730,18 @@ header #icons {
 
 #rightthesis .rightcontainertext {
   width: 60%;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
+  margin: 2rem 1rem 0 1.5rem;
 }
 
 #rightthesis .rightcontainertext h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
 
 #rightthesis .rightcontainertext h5 {
   margin-bottom: 2rem;
+  font-family: "Source Sans Pro";
 }
 
 @media only screen and (max-width: 1100px) {

@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
@@ -17,7 +18,7 @@
   <h1>Colmar<span>Academy</span></h1>
   </div>
   <nav>
-    <ul>
+    <ul role="presentation">
       <li><a href="#">On Campus</a></li>
       <li><a href="#">Online</a></li>
       <li><a href="#">For companies</a></li>
@@ -25,7 +26,7 @@
     </ul>
   </nav>
   <div id="icons">
-    <ul>
+    <ul role="presentation">
       <li><a href="#"><img src="./resources/img/ic-logo.svg" alt=""></a></li>
       <li><a href="#"><img src="./resources/img/ic-on-campus.svg" alt=""></a></li>
       <li><a href="#"><img src="./resources/img/ic-online.svg" alt=""></a></li>
@@ -38,23 +39,26 @@
   <div id="bannerimg">
     <img src="./resources/img/banner.jpg" alt="Students reading">
   </div>
-  <div id="bannertext">
-    <h1>Learn somthing new everyday</h1>
+  <div id="bannertext" role="presentation">
+    <h1>Learn something new everyday</h1>
     <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h3>
-    <button type="button" name="button"><a href="#">Start Here</a></button>
+    <button type="button" name="button" role="button"><a href="#">Start Here</a></button>
+    <p><a href="#"><i class="fa fa-facebook fa-2x"></i alt="follow us on Facebook"></a>
+       <a href="#"><i class="fa fa-twitter fa-2x"></i alt="follow us on Twitter"></a>
+       <a href="#"><i class="fa fa-linkedin fa-2x" alt="Connect with us on Linkedn"></i></a></p>
   </div>
 </div>
 
 <div id="main">
-  <div id="leftmain">
-    <img src="./resources/img/information-main.jpg" alt="Man readin the in park">
+  <div id="leftmain" role="presentation">
+    <img src="./resources/img/information-main.jpg" alt="Man reading the in park">
     <h1>It doesn't hurt to keep practicing</h1>
     <h3>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</h3>
     <p>Emanuel, Sr Strategist at Hiring.com</p>
   </div>
-  <div id="rightmain">
+  <div id="rightmain" role="presentation">
     <div class="rightcontainer">
-        <img src="./resources/img/information-orientation.jpg" alt="Poeple hiking in desert">
+        <img src="./resources/img/information-orientation.jpg" alt="Aerial view of people walking on a path">
       <div class="rightcontainertext">
         <h3>Orientation Date</h3>
         <h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
@@ -62,7 +66,7 @@
       </div>
     </div>
     <div class="rightcontainer">
-        <img src="./resources/img/information-campus.jpg" alt="campus coffee shop">
+        <img src="./resources/img/information-campus.jpg" alt="college campus coffee shop">
       <div class="rightcontainertext">
         <h3>Our campus</h3>
         <h5>Find which campus is closes to you</h5>
@@ -82,42 +86,42 @@
 
 <div id="startlearning">
   <h1>Start learning</h1>
-  <div id="wrapbox">
+  <div id="wrapbox" role="presentation">
     <a href="#"><div class="course" id="software">
-      <img src="./resources/img/course-software.jpg" alt="Software engineering">
+      <img src="./resources/img/course-software.jpg" alt="Software engineering course">
       <h2>Software Engineering</h2>
       <h3>COURSES</h3>
-      <h4>Web Development, Mobile Development, iOT, APIs</h4>
+      <h4 aria-label="Subjects covered in the course">Web Development, Mobile Development, iOT, APIs</h4>
     </div></a>
     <a href="#"><div class="course" id="computerart">
-      <img src="./resources/img/course-computer-art.jpg" alt="Computer Art">
+      <img src="./resources/img/course-computer-art.jpg" alt="Computer art course">
       <h2>Computer Art</h2>
       <h3>COURSES</h3>
-      <h4>Imaging and Design, Web Design, Motion Graphics, & Visual Effects, Computer Animation</h4>
+      <h4 aria-label="Subjects covered in the course">Imaging and Design, Web Design, Motion Graphics, & Visual Effects, Computer Animation</h4>
     </div></a>
     <a href="#"><div class="course" id="design">
-      <img src="./resources/img/course-design.jpg" alt="Design">
+      <img src="./resources/img/course-design.jpg" alt="Design course">
       <h2>Design</h2>
       <h3>COURSES</h3>
-      <h4>User Experience Design, User Research, Visual Design</h4>
+      <h4 aria-label="Subjects covered in the course">User Experience Design, User Research, Visual Design</h4>
     </div></a>
     <a href="#"><div class="course" id="data">
-      <img src="./resources/img/course-data.jpg" alt="Data">
+      <img src="./resources/img/course-data.jpg" alt="Data course">
       <h2>Data</h2>
       <h3>COURSES</h3>
-      <h4>Data Science, Big Data, SQL, Data Visualization</h4>
+      <h4 aria-label="Subjects covered in the course">Data Science, Big Data, SQL, Data Visualization</h4>
     </div></a>
     <a href="#"><div class="course" id="business">
-      <img src="./resources/img/course-business.jpg" alt="Business">
+      <img src="./resources/img/course-business.jpg" alt="Business course">
       <h2>Business</h2>
       <h3>COURSES</h3>
-      <h4>Product Development, Business Development, Startup</h4>
+      <h4 aria-label="Subjects covered in the course">Product Development, Business Development, Startup</h4>
     </div></a>
     <a href="#"><div class="course" id="marketing">
-      <img src="./resources/img/course-marketing.jpg" alt="Marketing">
+      <img src="./resources/img/course-marketing.jpg" alt="Marketing course">
       <h2>Marketing</h2>
       <h3>COURSES</h3>
-      <h4>Analytics, Content Marketing, Mobile Marketing</h4>
+      <h4 aria-label="Subjects covered in the course">Analytics, Content Marketing, Mobile Marketing</h4>
     </div></a>
   </div>
 </div>
@@ -126,7 +130,7 @@
 <div id="thesisheader">
   <h1>Thesis Exhibits</h1>
 </div>
-<div id="thesis">
+<div id="thesis" role="presentation">
   <div id="thesisleft">
     <video src="./resources/vid/thesis.mp4" controls autoplay loop>
       Unable to display video
@@ -136,25 +140,28 @@
   </div>
   <div id="rightthesis">
     <div class="rightcontainer">
-        <img src="./resources/img/thesis-fisma.jpg" alt="Fisma: Disign and Prototype">
+        <img src="./resources/img/thesis-fisma.jpg" alt="student working on a Design for a prototype">
       <div class="rightcontainertext">
-        <h3>Fisma: Disign and Prototype</h3>
+        <h3>Fisma: Design and Prototype</h3>
         <h5>Designer showcase of new prototype product</h5>
       </div>
     </div>
     <div class="rightcontainer">
-        <img src="./resources/img/thesis-now-and-then.jpg" alt="Now and then New York">
+        <img src="./resources/img/thesis-now-and-then.jpg" alt="New York City skyline">
       <div class="rightcontainertext">
         <h3>Now and then</h3>
-        <h5>Research study abou New York</h5>
+        <h5>Research study about New York</h5>
       </div>
     </div>
   </div>
 </div>
 
-<footer>
+<footer role="presentation">
   <div id="copyright">
     <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+    <a href="#"><i class="fa fa-facebook"></i alt="follow us on Facebook"></a>
+    <a href="#"><i class="fa fa-twitter"></i alt="follow us on Twitter"></a>
+    <a href="#"><i class="fa fa-linkedin" alt="Connect with us on Linkedn"></i></a>
   </div>
   <div id="terms">
     <p><a href="#">Terms</a></p>

@@ -90,7 +90,7 @@ nav ul li a:hover {
   color: white;
   font-weight: bold;
   background-color: black;
-  border-radius: 30%;
+  border-radius: 45%;
   transition: color 300ms ease-in,
               font-weight 750ms ease-out,
               background-color 750ms ease-in,
@@ -167,11 +167,10 @@ header #icons {
 }
 
 #bannerimg {
-
   height: auto;
-    margin: 3rem 4rem 3rem 2.5rem;
-    background-position: center;
-    flex-grow: 1;
+  margin: 3rem 4rem 3rem 2.5rem;
+  background-position: center;
+  flex-grow: 1;
 }
 
 #bannerimg img {
@@ -186,7 +185,6 @@ header #icons {
   height: 80%;
   width: auto;
   margin: 5rem 4rem 6rem 0;
-
 }
 
 #bannertext h1 {
@@ -230,7 +228,18 @@ header #icons {
   transition: color 750ms ease-in 500ms;
 }
 
-@media only screen and (max-width: 1200px) {
+#bannertext p a i {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+#bannertext p a i:hover {
+  transform: rotate(360deg);
+  transition: transform 800ms ease 100ms;
+}
+
+
+@media only screen and (max-width: 1275px) {
 
   #banner {
     display: flex;
@@ -252,12 +261,16 @@ header #icons {
   #bannertext {
     height: auto;
     align-items: center;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 2rem 2rem;
     padding: 0;
   }
 
   #bannertext button {
     padding: 1rem 3rem 1rem 3rem;
+  }
+
+  #bannertext p a i{
+    display: none;
   }
 }
 
@@ -277,7 +290,6 @@ header #icons {
 
   #bannertext h1 {
     font-size: 2rem;
-
     margin: 0 0 2rem 0;
     line-height: 2.5rem;
   }
@@ -291,10 +303,15 @@ header #icons {
     margin: 0;
     padding: 0.5rem 4rem 0.5rem 4rem;
   }
-
-
 }
 
+@media only screen and (max-width: 450px) {
+
+  #banner img {
+    height: 18rem;
+  }
+
+}
 
 /* Main content */
 
@@ -718,7 +735,7 @@ header #icons {
 
 #rightthesis .rightcontainer:hover {
   background-color: lightgray;
-  transition: background-color 450ms ease-in 200ms;
+  transition: background-color 450ms ease-in;
 
 }
 
@@ -802,8 +819,13 @@ footer {
 }
 
 #copyright {
+  display: flex;
   margin-left: 1rem;
   color: gray;
+}
+
+#copyright a i {
+  margin-left: 0.5rem;
 }
 
 #terms {

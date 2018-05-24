@@ -454,7 +454,7 @@ header #icons {
   }
 
   #rightmain {
-    width: 70%;
+    width: 85%;
   }
 
   #rightmain .rightcontainer {
@@ -473,7 +473,7 @@ header #icons {
   }
 
   #rightmain .rightcontainertext h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 1rem 0 1.5rem 0;
   }
 
@@ -487,13 +487,11 @@ header #icons {
       margin: 0 0 2rem 0;
   }
 
-  #rightmain .rightcontainertext p a{
+  #rightmain .rightcontainertext p a {
     font-size: 1rem;
     text-decoration: underline;
     color: blue;
-
   }
-
 }
 
 
@@ -543,8 +541,8 @@ header #icons {
 }
 
 .course h4 {
-    line-height: 2rem;
-    padding-bottom: 3rem;
+  line-height: 2rem;
+  padding-bottom: 3rem;
 }
 
 #computerart h4 {

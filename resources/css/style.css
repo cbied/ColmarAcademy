@@ -530,6 +530,7 @@ header #icons {
 
 .course h2 {
   margin-top: 0.75rem;
+  margin-left: 2rem;
   padding-bottom: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
@@ -549,7 +550,7 @@ header #icons {
   padding-bottom: 1rem;
 }
 
-.course h2, .course h3, .course h4 {
+.course h3, .course h4 {
   margin-left: 2em;
   margin-right: 1rem;
 }
